@@ -72,39 +72,14 @@ CMakeFiles/StanHeaderExample.dir/source1.cpp.o.provides: CMakeFiles/StanHeaderEx
 
 CMakeFiles/StanHeaderExample.dir/source1.cpp.o.provides.build: CMakeFiles/StanHeaderExample.dir/source1.cpp.o
 
-CMakeFiles/StanHeaderExample.dir/source2.cpp.o: CMakeFiles/StanHeaderExample.dir/flags.make
-CMakeFiles/StanHeaderExample.dir/source2.cpp.o: source2.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rgiordan/Documents/git_repos/StanHeaderExample/src/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/StanHeaderExample.dir/source2.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/StanHeaderExample.dir/source2.cpp.o -c /home/rgiordan/Documents/git_repos/StanHeaderExample/src/source2.cpp
-
-CMakeFiles/StanHeaderExample.dir/source2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/StanHeaderExample.dir/source2.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rgiordan/Documents/git_repos/StanHeaderExample/src/source2.cpp > CMakeFiles/StanHeaderExample.dir/source2.cpp.i
-
-CMakeFiles/StanHeaderExample.dir/source2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/StanHeaderExample.dir/source2.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rgiordan/Documents/git_repos/StanHeaderExample/src/source2.cpp -o CMakeFiles/StanHeaderExample.dir/source2.cpp.s
-
-CMakeFiles/StanHeaderExample.dir/source2.cpp.o.requires:
-.PHONY : CMakeFiles/StanHeaderExample.dir/source2.cpp.o.requires
-
-CMakeFiles/StanHeaderExample.dir/source2.cpp.o.provides: CMakeFiles/StanHeaderExample.dir/source2.cpp.o.requires
-	$(MAKE) -f CMakeFiles/StanHeaderExample.dir/build.make CMakeFiles/StanHeaderExample.dir/source2.cpp.o.provides.build
-.PHONY : CMakeFiles/StanHeaderExample.dir/source2.cpp.o.provides
-
-CMakeFiles/StanHeaderExample.dir/source2.cpp.o.provides.build: CMakeFiles/StanHeaderExample.dir/source2.cpp.o
-
 # Object files for target StanHeaderExample
 StanHeaderExample_OBJECTS = \
-"CMakeFiles/StanHeaderExample.dir/source1.cpp.o" \
-"CMakeFiles/StanHeaderExample.dir/source2.cpp.o"
+"CMakeFiles/StanHeaderExample.dir/source1.cpp.o"
 
 # External object files for target StanHeaderExample
 StanHeaderExample_EXTERNAL_OBJECTS =
 
 libStanHeaderExample.so: CMakeFiles/StanHeaderExample.dir/source1.cpp.o
-libStanHeaderExample.so: CMakeFiles/StanHeaderExample.dir/source2.cpp.o
 libStanHeaderExample.so: CMakeFiles/StanHeaderExample.dir/build.make
 libStanHeaderExample.so: CMakeFiles/StanHeaderExample.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libStanHeaderExample.so"
@@ -115,7 +90,6 @@ CMakeFiles/StanHeaderExample.dir/build: libStanHeaderExample.so
 .PHONY : CMakeFiles/StanHeaderExample.dir/build
 
 CMakeFiles/StanHeaderExample.dir/requires: CMakeFiles/StanHeaderExample.dir/source1.cpp.o.requires
-CMakeFiles/StanHeaderExample.dir/requires: CMakeFiles/StanHeaderExample.dir/source2.cpp.o.requires
 .PHONY : CMakeFiles/StanHeaderExample.dir/requires
 
 CMakeFiles/StanHeaderExample.dir/clean:

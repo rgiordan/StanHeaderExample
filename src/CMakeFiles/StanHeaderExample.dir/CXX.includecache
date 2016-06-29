@@ -16,31 +16,13 @@ stan/math.hpp
 stan/math/fwd/scal.hpp
 /home/rgiordan/Documents/git_repos/StanHeaderExample/include/stan/math/fwd/scal.hpp
 
-/home/rgiordan/Documents/git_repos/StanHeaderExample/include/source2.hpp
-boost/math/special_functions/digamma.hpp
--
-boost/math/special_functions/gamma.hpp
--
-stan/math.hpp
--
-stan/math/fwd/scal.hpp
-/home/rgiordan/Documents/git_repos/StanHeaderExample/include/stan/math/fwd/scal.hpp
-
 /home/rgiordan/Documents/git_repos/StanHeaderExample/src/source1.cpp
 source1.hpp
 /home/rgiordan/Documents/git_repos/StanHeaderExample/src/source1.hpp
 stan/math.hpp
 -
 stan/math/fwd/scal.hpp
-/home/rgiordan/Documents/git_repos/StanHeaderExample/src/stan/math/fwd/scal.hpp
-
-/home/rgiordan/Documents/git_repos/StanHeaderExample/src/source2.cpp
-source2.hpp
-/home/rgiordan/Documents/git_repos/StanHeaderExample/src/source2.hpp
-stan/math.hpp
 -
-stan/math/fwd/scal.hpp
-/home/rgiordan/Documents/git_repos/StanHeaderExample/src/stan/math/fwd/scal.hpp
 
 /home/rgiordan/Documents/git_repos/math/lib/boost_1.60.0/boost/aligned_storage.hpp
 boost/type_traits/aligned_storage.hpp

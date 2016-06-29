@@ -14,7 +14,6 @@ include_directories(${GIT_REPO_LOC}/math/lib/eigen_3.2.8/)
 include_directories(${GIT_REPO_LOC}/math/lib/boost_1.60.0/)
 include_directories(${GIT_REPO_LOC}/StanHeaderExample/include)
 
-set(CC_SOURCES source1.cpp source2.cpp)
+set(CC_SOURCES source1.cpp source2.cpp) # This will fail
+# set(CC_SOURCES source1.cpp) # This will work
 add_library(StanHeaderExample SHARED ${CC_SOURCES})
-
-install(TARGETS StanHeaderExample DESTINATION /usr/lib)

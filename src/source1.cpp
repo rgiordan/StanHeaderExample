@@ -1,7 +1,7 @@
 
 # include "source1.hpp"
 # include <stan/math.hpp>
-# include "stan/math/fwd/scal.hpp"
+# include <stan/math/fwd/scal.hpp>
 
 using var = stan::math::var;
 using fvar = stan::math::fvar<var>;

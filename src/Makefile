@@ -50,16 +50,6 @@ CMAKE_BINARY_DIR = /home/rgiordan/Documents/git_repos/StanHeaderExample/src
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-.PHONY : install/strip/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -79,37 +69,6 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -179,49 +138,18 @@ source1.cpp.s:
 	$(MAKE) -f CMakeFiles/StanHeaderExample.dir/build.make CMakeFiles/StanHeaderExample.dir/source1.cpp.s
 .PHONY : source1.cpp.s
 
-source2.o: source2.cpp.o
-.PHONY : source2.o
-
-# target to build an object file
-source2.cpp.o:
-	$(MAKE) -f CMakeFiles/StanHeaderExample.dir/build.make CMakeFiles/StanHeaderExample.dir/source2.cpp.o
-.PHONY : source2.cpp.o
-
-source2.i: source2.cpp.i
-.PHONY : source2.i
-
-# target to preprocess a source file
-source2.cpp.i:
-	$(MAKE) -f CMakeFiles/StanHeaderExample.dir/build.make CMakeFiles/StanHeaderExample.dir/source2.cpp.i
-.PHONY : source2.cpp.i
-
-source2.s: source2.cpp.s
-.PHONY : source2.s
-
-# target to generate assembly for a file
-source2.cpp.s:
-	$(MAKE) -f CMakeFiles/StanHeaderExample.dir/build.make CMakeFiles/StanHeaderExample.dir/source2.cpp.s
-.PHONY : source2.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... StanHeaderExample"
-	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... install/local"
 	@echo "... source1.o"
 	@echo "... source1.i"
 	@echo "... source1.s"
-	@echo "... source2.o"
-	@echo "... source2.i"
-	@echo "... source2.s"
 .PHONY : help
 
 
