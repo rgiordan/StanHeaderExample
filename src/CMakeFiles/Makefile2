@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/rgiordan/Documents/git_repos/StanHeaderExample/src
 CMakeFiles/StanHeaderExample.dir/all:
 	$(MAKE) -f CMakeFiles/StanHeaderExample.dir/build.make CMakeFiles/StanHeaderExample.dir/depend
 	$(MAKE) -f CMakeFiles/StanHeaderExample.dir/build.make CMakeFiles/StanHeaderExample.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rgiordan/Documents/git_repos/StanHeaderExample/src/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rgiordan/Documents/git_repos/StanHeaderExample/src/CMakeFiles  1 2
 	@echo "Built target StanHeaderExample"
 .PHONY : CMakeFiles/StanHeaderExample.dir/all
 
@@ -69,7 +69,7 @@ all: CMakeFiles/StanHeaderExample.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/StanHeaderExample.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rgiordan/Documents/git_repos/StanHeaderExample/src/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rgiordan/Documents/git_repos/StanHeaderExample/src/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/StanHeaderExample.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/rgiordan/Documents/git_repos/StanHeaderExample/src/CMakeFiles 0
 .PHONY : CMakeFiles/StanHeaderExample.dir/rule

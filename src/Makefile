@@ -138,6 +138,30 @@ source1.cpp.s:
 	$(MAKE) -f CMakeFiles/StanHeaderExample.dir/build.make CMakeFiles/StanHeaderExample.dir/source1.cpp.s
 .PHONY : source1.cpp.s
 
+source2.o: source2.cpp.o
+.PHONY : source2.o
+
+# target to build an object file
+source2.cpp.o:
+	$(MAKE) -f CMakeFiles/StanHeaderExample.dir/build.make CMakeFiles/StanHeaderExample.dir/source2.cpp.o
+.PHONY : source2.cpp.o
+
+source2.i: source2.cpp.i
+.PHONY : source2.i
+
+# target to preprocess a source file
+source2.cpp.i:
+	$(MAKE) -f CMakeFiles/StanHeaderExample.dir/build.make CMakeFiles/StanHeaderExample.dir/source2.cpp.i
+.PHONY : source2.cpp.i
+
+source2.s: source2.cpp.s
+.PHONY : source2.s
+
+# target to generate assembly for a file
+source2.cpp.s:
+	$(MAKE) -f CMakeFiles/StanHeaderExample.dir/build.make CMakeFiles/StanHeaderExample.dir/source2.cpp.s
+.PHONY : source2.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -150,6 +174,9 @@ help:
 	@echo "... source1.o"
 	@echo "... source1.i"
 	@echo "... source1.s"
+	@echo "... source2.o"
+	@echo "... source2.i"
+	@echo "... source2.s"
 .PHONY : help
 
 

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/StanHeaderExample.dir/source1.cpp.o"
+  "CMakeFiles/StanHeaderExample.dir/source2.cpp.o"
   "libStanHeaderExample.pdb"
   "libStanHeaderExample.so"
 )

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/rgiordan/Documents/git_repos/StanHeaderExample/src/source1.cpp" "/home/rgiordan/Documents/git_repos/StanHeaderExample/src/CMakeFiles/StanHeaderExample.dir/source1.cpp.o"
+  "/home/rgiordan/Documents/git_repos/StanHeaderExample/src/source2.cpp" "/home/rgiordan/Documents/git_repos/StanHeaderExample/src/CMakeFiles/StanHeaderExample.dir/source2.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,7 +19,6 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/rgiordan/Documents/git_repos/math"
   "/home/rgiordan/Documents/git_repos/math/lib/eigen_3.2.8"
   "/home/rgiordan/Documents/git_repos/math/lib/boost_1.60.0"
-  "/home/rgiordan/Documents/git_repos/StanHeaderExample/include"
   )
 set(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 set(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

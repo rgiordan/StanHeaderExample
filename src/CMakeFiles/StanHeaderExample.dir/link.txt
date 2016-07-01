@@ -1,1 +1,1 @@
-/usr/bin/c++  -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libStanHeaderExample.so -o libStanHeaderExample.so CMakeFiles/StanHeaderExample.dir/source1.cpp.o 
+/usr/bin/c++  -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libStanHeaderExample.so -o libStanHeaderExample.so CMakeFiles/StanHeaderExample.dir/source1.cpp.o CMakeFiles/StanHeaderExample.dir/source2.cpp.o 
