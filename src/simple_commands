@@ -1,0 +1,15 @@
+GIT_REPO_LOC=/home/rgiordan/Documents/git_repos/
+
+for SOURCE in source1.cpp source2.cpp; do
+	echo "Compiling "$SOURCE
+	/usr/bin/c++ \
+	-DStanHeaderExample_EXPORTS -O3 -DNDEBUG -fPIC -std=c++11 -Wno-deprecated \
+	-I${GIT_REPO_LOC}/math \
+	-I${GIT_REPO_LOC}/math/lib/eigen_3.2.8 \
+	-I${GIT_REPO_LOC}/math/lib/boost_1.60.0 \
+	-o ${SOURCE}.o -c ${SOURCE}
+done
+
+/usr/bin/c++  -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libStanHeaderExample.so \
+-o libStanHeaderExample.so \
+source1.cpp.o source2.cpp.o
